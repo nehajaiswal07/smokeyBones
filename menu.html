@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>SMOKEY BONES!</title>
+    <link rel="icon" href="restaurant/fire.png" type="image">
+    <link rel="stylesheet" href="css/restro.css">
+</head>
+<style>
+    .logo {
+        height: 80px;
+        width: 238px;
+
+    }
+
+    .navbar ul {
+        padding: 2px 5px;
+    }
+
+    .navbar ul li {
+        margin: 1px 20px;
+
+    }
+
+    .navbar ul li a {
+        margin: 0px 6px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: Verdana;
+    }
+
+    .row .header {
+
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover cover;
+
+    }
+
+
+
+    .inner-gray {
+        background-image: url('restaurant/back.jpg');
+        background-size: cover;
+        background-repeat: repeat;
+        padding: 60px 40px;
+        background-size: 200px;
+
+
+    }
+
+    .inner {
+
+
+        border-radius: 20px;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    .menu-item a {
+        display: block;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+
+    .menu-item a .image {
+        width: 100%;
+        padding-top: 60%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .menu-item a span {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 10px;
+        text-align: center;
+        display: block;
+        font-size: 1.1rem;
+        padding: 12px 25px;
+        background-image: url('restaurant/brick_splatter.webp');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        width: 100%;
+        padding: 25px 0;
+        padding-bottom: 65px;
+        text-align: center;
+    }
+
+    footer img {
+        width: 250px;
+        height: 90px;
+        margin-bottom: 25px;
+        vertical-align: middle;
+        border-style: none;
+
+    }
+
+    footer .social {
+        display: inline-block;
+        width: 58px;
+        height: 60px;
+        background-size: cover;
+        margin: 0 10px;
+        background-position: top center;
+    }
+
+    footer .social:hover {
+        transform: scale(1.1);
+
+
+    }
+
+    footer .footer-nav ul {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    footer .footer-nav ul li {
+        display: inline-block;
+        font-family: "Zilla Slab", serif;
+        text-transform: uppercase;
+        font-size: .75rem;
+        padding-right: 7px;
+        margin-right: 4px;
+        line-height: 1;
+        border-right: solid 1px #372f2d;
+    }
+
+    footer .footer-nav ul li a {
+        text-decoration: none;
+        background-color: transparent;
+        color: rgb(94, 91, 91);
+    }
+
+    footer .copyright {
+        font-size: .73rem;
+        display: inline-block;
+        margin-bottom: 0px;
+        color: rgb(94, 91, 91);
+        font-family: "Zilla Slab", serif;
+        font-weight: 400;
+
+    }
+</style>
+
+<body>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img
+                        src="restaurant/32212254732-2021030409382944-unscreen.gif" class="logo"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="event.html"
+                                style="color: black;">Events</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bar.html" style="color: black;">Bar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="restro.html" style="color: black;">Menu</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="special.html" style="color: black;">Specials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html" style="color: rgb(209, 24, 24);">Order now</a>
+                        </li>
+
+                    </ul>
+                    <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="header" style="background: url('restaurant/Menu_Main.jpg');">
+                <div class="content center"
+                    style="text-align: center; color: white; margin-bottom: 90px;  padding: 100px 10px;line-height: 1;">
+                    <h2
+                        style="font-size: 3.5rem; font-weight:900;font-family: Arial Rounded MT Bold; display: inline-block; font-family: Arial Rounded MT Bold;">
+                        SMOKEY BONES MENU</h2>
+
+
+                    <center> <button class="btn btn-danger my-5"><a href="order.html"
+                                style="text-decoration: none; font-size:1.2rem; color:white ;   font-family: Franklin Gothic Demi Cond; font-weight: 600;">
+                                ORDER ONLINE</a> </button></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-------------------------------------------------------menu---------------------------------------------------------->
+
+    <div class="container-fluid mt-3">
+        <div class="inner-gray">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-wings.html">
+                            <div class="image" style="background: url('restaurant/wings.jpg');"></div>
+                            <span class="match" style="height: 59px;"> wings</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-lunch bowl.html">
+                            <div class="image"
+                                style="background: url('restaurant/lunch_bowls.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">lunch bowls</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-appetizer.html">
+                            <div class="image"
+                                style="background: url('restaurant/buffalo\ chicken\ chips\ 1.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;"> appetizers</span>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-burger.html">
+                            <div class="image"
+                                style="background: url('restaurant/signature\ bbq\ burger.jpg'); background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;"> burgers</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-seafood.html">
+                            <div class="image"
+                                style="background: url('restaurant/Fire-GrilledShrimp_doctored@300.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">seafood</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-sides.html">
+                            <div class="image"
+                                style="background: url('restaurant/Screen\ Shot\ 2020-09-14\ at\ 4.47.55\ PM.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;"> sides</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-dessert.html">
+                            <div class="image"
+                                style="background: url('restaurant/donuts.jpg'); background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">deserts</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-family meal.html">
+                            <div class="image"
+                                style="background: url('restaurant/family_feast.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">family meals</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-sandwitch.html">
+                            <div class="image"
+                                style="background: url('restaurant/brisket\ stuffed\ grilled\ cheese.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;"> sandwiches</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-kids.html">
+                            <div class="image"
+                                style="background: url('restaurant/Smokey\ Bones\ \ Kids\ Pulled\ Pork\ Sandwich\ 2\ Mac&Cheese.jpg'); background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">kids</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="bar.html">
+                            <div class="image"
+                                style="background: url('restaurant/summer-cocktails-24374-3.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">drinks</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-featured-item.html">
+                            <div class="image"
+                                style="background: url('restaurant/pulled\ pork\ fried\ pie\ 2.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">featured items</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-FIRE-GRILLED FAVORITES.html">
+                            <div class="image"
+                                style="background: url('restaurant/RibeyeSteakWLoadedBakedPotato_cmyk.jpg'); background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">fire grilled </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-bbq.html">
+                            <div class="image"
+                                style="background: url('restaurant/pulled\ pork\ platter\ -4.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;">bbq platters</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <a href="menu-pasta.html">
+                            <div class="image"
+                                style="background: url('restaurant/smokehousemac.jpg'); width: 100%; background-position: center; background-size: cover;">
+                            </div>
+                            <span class="match" style="height: 59px;"> pasta</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+    <!---------------------------------------------------footer--------------------------------------------------------------------->
+
+    <footer class="container-fluid" style="  width: 100%;padding-right: 15px;padding-left: 15px;margin-right: auto;">
+        <a href="#"><img src="restaurant/logo.svg"></a>
+        <p>
+            <a href="#" target="_blank" style="background-image: url('restaurant/logo-facebook-512.webp');"
+                class="social"></a>
+            <a href="#" target="_blank"
+                style="background-image: url('restaurant/60-606475_png-file-twitter-icon-round-black-clipart.png');"
+                class="social"></a>
+            <a href="#" target="_blank"
+                style="background-image: url('restaurant/instagram-icon-white-on-black-circle.png');"
+                class="social"></a>
+
+
+        </p>
+
+        <nav class="footer-nav">
+            <ul class="menu">
+                <li class="menu-item"><a href="#">About us</a></li>
+                <li class="menu-item"><a href="#">Contact us</a></li>
+                <li class="menu-item"><a href="bones club.html">Bones Club</a></li>
+                <li class="menu-item"><a href="#">gift card</a></li>
+                <li class="menu-item"><a href="menu.html">menu</a></li>
+            </ul>
+        </nav>
+        <p class="copyright serif">© 2022 Smokey Bones . All Right Reserve</p>
+
+    </footer>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
