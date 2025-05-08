@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>SMOKEY BONES!</title>
+  <link rel="icon" href="restaurant/fire.png" >
+  <link rel="stylesheet" href="css/restro.css">
+</head>
+<style>
+  .logo {
+    height: 80px;
+    width: 238px;
+
+  }
+
+  .navbar ul {
+    padding: 2px 5px;
+  }
+
+  .navbar ul li {
+    margin: 1px 20px;
+
+  }
+
+  .navbar ul li a {
+    margin: 0px 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Verdana;
+  }
+
+  .row .events {
+
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .row .events h1 {
+
+    padding: 15px 0;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+  }
+
+  .row .header {
+
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover cover;
+
+  }
+
+  .headline h2 {
+    display: inline-block;
+    background: url('restaurant/headline_bg.png');
+    text-align: center;
+    background-size: cover;
+    color: white;
+    text-transform: uppercase;
+    margin: 30px auto;
+    padding: 15px 40px;
+    font-size: 2rem;
+    font-weight: 600;
+
+
+  }
+
+  .headline {
+    text-align: center;
+  }
+
+  .col-sm-3 h2 {
+    background: url('restaurant/headline_bg.png');
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    padding: 15px 30px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    margin-right: 1.1;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+
+  .inner-ring {
+    background-image: url('restaurant/udUclZY.jpg');
+
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .text {
+
+
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3px 7px;
+
+
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+    font-family: Oswald, sans-serif !important;
+    margin: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: baseline;
+
+  }
+
+  .content p {
+    font-size: .8rem;
+    font-family: Oswald, sans-serif !important;
+    margin: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: baseline;
+
+  }
+
+  .inner-gray {
+    background-image: url('restaurant/back.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 60px 25px;
+    background-size: 200px;
+   
+
+  }
+
+  .inner {
+    text-align: center;
+    
+    border-radius: 8px;
+  }
+
+  .inner .content {
+    max-width: 100%;
+    width: 800px;
+    margin: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer {
+    width: 100%;
+    padding: 25px 0;
+    padding-bottom: 65px;
+    text-align: center;
+  }
+
+  footer img {
+    width: 250px;
+    height: 90px;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    border-style: none;
+
+  }
+
+  footer .social {
+    display: inline-block;
+    width: 58px;
+    height: 60px;
+    background-size: cover;
+    margin: 0 10px;
+    background-position: top center;
+  }
+
+  footer .social:hover {
+    transform: scale(1.1);
+
+
+  }
+
+  footer .footer-nav ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-nav ul li {
+    display: inline-block;
+    font-family: "Zilla Slab", serif;
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding-right: 7px;
+    margin-right: 4px;
+    line-height: 1;
+    border-right: solid 1px #372f2d;
+  }
+
+  footer .footer-nav ul li a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(94, 91, 91);
+  }
+
+  footer .copyright {
+    font-size: .73rem;
+    display: inline-block;
+    margin-bottom: 0px;
+    color: rgb(94, 91, 91);
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+
+  }
+</style>
+
+<body>
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="restaurant/32212254732-2021030409382944-unscreen.gif"
+            class="logo"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="event.html" style="color: black;">Events</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bar.html" style="color: black;">Bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html" style="color: black;">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="special.html" style="color: black;">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html" style="color: rgb(209, 24, 24);">Order now</a>
+            </li>
+
+          </ul>
+          <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
+      </div>
+    </nav>
+
+
+
+
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="events" style="background: url('restaurant/breadcrumb_bg.png');">
+        <h1 id="event">CATERING & EVENTS</h1>
+      </div>
+    </div>
+  </div>
+  <!----------------------------------------------------------------------------------------------------------------------->
+
+
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="header" style="background: url('restaurant/catering-header.jpg');">
+        <div class="content center"
+          style="text-align: center; color: white; padding: 125px 1px; margin-bottom: 30px; ">
+          <h2 style="font-size: 3.4rem; font-weight:400; font-family: Arial Rounded MT Bold; display: inline-block;">
+            CATERING &</h2>
+          <h1 style="font-size: 4.8rem; font-weight:800; font-family: Bahnschrift SemiBold; line-height: .9;" id="eve">
+            EVENTS </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!------------------------------------about-------------------------------------------------------------------->
+
+  <div class="headline container-fluid mt-4">
+    <h2>CHOOSE YOUR CATERING STYLE</h2>
+  </div>
+
+
+  <!-------------------------------------------------------------------------------------------------------------->
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <h2>pick up</h2>
+        <p style="font-size: 1.1rem; font-family: Bahnschrift Light Condensed;">Let them think you did all the cooking.
+          Order online or give us a call, and we’ll have your food ready for
+          you to pick up.</p>
+        <h12 style="font-size: .7rem; font-family: Bahnschrift Light Condensed;">No minimum requirements..</h12>
+
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <h2>catering delivery</h2>
+        <p style="font-size: 1.1rem; font-family:Bahnschrift Light Condensed;">
+          We deliver the goods, and you start the party. Avoid the drive and have us bring everything right to you..</p>
+        <h12 style="font-size: .7rem; font-family: Bahnschrift Light Condensed;">Please allow a 30-minute window for
+          delivery..</h12>
+      </div>
+      <div class="col-sm-2"></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!----------------------------------------------------------------------------------------------------->
+
+
+    <div class="container-fluid mt-3" style="padding: 0px 20px;">
+      <div class="inner-ring" id="inner-ring">
+        <div class="row">
+
+          <div class="content">
+            <h1 id="heading">
+              START YOUR
+              CATERING ORDER</h1>
+
+            <p>Well, that depends on the type of catering you’d
+              like.<br> You can book up to a year in advance; if you know the date, give us a call.<br> Depending on the
+              order
+              size, we may be able to handle your request the same day, but 2-3 days in advance is appreciated. </p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-----------------------------------------form--------------------------------------------------------------->
+    <div class="container-fluid mt-3">
+      <div class="inner-gray">
+        <div class="content">
+          <h1 style="color: black; font-size: 2rem; text-transform: uppercase;">party at your place</h1>
+          <p style="color: black; font-size: .9rem;">Bring the party to us and we’ll take care of everything! Enjoy a semi-private setting at one of our Smokey
+            Bones locations<br> where we offer customizable menus and a selection of buffet-style, family style or
+            full-service options. <br>Don’t forget to plan for our carving stations and a bourbon tasting bar!</p>
+            <h1 style="color: black; font-size: 1.9rem; text-transform: uppercase;">LET US KNOW ABOUT YOUR PARTY</h1>
+        <p style="color: black; font-size: 1rem;">Fill in the form below and we will be in touch.</p>
+         
+      
+      
+      </div>
+          <div class="row form">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="row g-3 mt-3">
+                <div class="col-sm-6">
+                  <label style="font-size: 1.1rem; font-weight:600;text-transform: uppercase;">Name*</label>
+                  <input type="text" class="form-control" placeholder="Enter your name" aria-label="Name" style="border: 1px solid rgb(99, 95, 95);">
+                </div>
+                <div class="col-sm">
+                  <label style="font-size: 1.1rem; font-weight:600;text-transform: uppercase;">Email*</label>
+                  <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email" style="border: 1px solid rgb(99, 95, 95);">
+                </div>
+              
+              </div>
+
+              <div class="row g-3 mt-4">
+                <div class="col-sm-4">
+                  <label style="font-size: 1.1rem; font-weight:600;text-transform: uppercase;">Phone*</label>
+                  <input type="number" class="form-control" placeholder="Enter number" aria-label="number" style="border: 1px solid rgb(99, 95, 95);">
+                </div>
+                <div class="col-sm">
+                  <label style="font-size: 1.1rem; font-weight:600; text-transform: uppercase;">Party Size*</label>
+                  <input type="text" class="form-control" placeholder="Party Size" aria-label="party" style="border: 1px solid rgb(99, 95, 95);">
+                </div>
+                <div class="col-sm">
+                  <label style="font-size: 1.1rem; font-weight:600; text-transform: uppercase;">Date</label>
+                  <input type="date" class="form-control" placeholder="Date" aria-label="date" style="border: 1px solid rgb(99, 95, 95);">
+                </div>
+              
+              </div>
+
+              <div class="row g-3 mt-4">
+                <div class="col-sm-12">
+                  <label style="font-size: 1.1rem; font-weight:600;">SPECIAL REQUIREMENTS</label>
+                  <textarea name="message"  rows="7" placeholder="Tell us about your party" style=" margin:auto;width: 100%; border: 1px solid rgb(99, 95, 95);"></textarea>
+                </div>
+               
+              
+              </div>
+              <button class="btn btn-danger mt-2" style="font-size: 1.3rem; font-weight:600; padding: 7px 17px; border-radius: 1px;">Submit</button>
+
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+      </div>
+    </div>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+  
+
+
+<!---------------------------------------------------footer--------------------------------------------------------------------->
+
+    <footer class="container-fluid" style="  width: 100%;padding-right: 15px;padding-left: 15px;margin-right: auto;">
+      <a href="#"><img src="restaurant/logo.svg"></a>
+      <p>
+        <a href="#" target="_blank" style="background-image: url('restaurant/logo-facebook-512.webp');"
+          class="social"></a>
+        <a href="#" target="_blank"
+          style="background-image: url('restaurant/60-606475_png-file-twitter-icon-round-black-clipart.png');"
+          class="social"></a>
+        <a href="#" target="_blank"
+          style="background-image: url('restaurant/instagram-icon-white-on-black-circle.png');" class="social"></a>
+
+
+      </p>
+
+      <nav class="footer-nav">
+        <ul class="menu">
+          <li class="menu-item"><a href="#">About us</a></li>
+          <li class="menu-item"><a href="#">Contact us</a></li>
+          <li class="menu-item"><a href="bones club.html">Bones Club</a></li>
+          <li class="menu-item"><a href="#">gift card</a></li>
+          <li class="menu-item"><a href="menu.html">menu</a></li>
+        </ul>
+      </nav>
+      <p class="copyright serif">© 2022 Smokey Bones . All Right Reserve</p>
+
+    </footer>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
