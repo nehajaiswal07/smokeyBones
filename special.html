@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>SMOKEY BONES!</title>
+  <link rel="icon" href="restaurant/fire.png" type="image">
+  <link rel="stylesheet" href="css/restro.css">
+</head>
+<style>
+  .logo {
+    height: 80px;
+    width: 238px;
+
+  }
+
+  .navbar ul {
+    padding: 2px 5px;
+  }
+
+  .navbar ul li {
+    margin: 1px 20px;
+
+  }
+
+  .navbar ul li a {
+    margin: 0px 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Verdana;
+  }
+
+  .row .events {
+
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .row .events h1 {
+
+    padding: 15px 0;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+  }
+
+
+
+  #bbq {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 70px;
+    padding: 8px;
+
+  }
+
+  .content {
+    margin: 90px 2px;
+text-align: justify;
+text-align: center;
+  }
+
+  .content h2 {
+
+    font-size: 3.3rem;
+    font-weight: 800;
+    font-family: Garamond;
+  }
+
+
+  .content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+
+  }
+
+  .content span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: Garamond;
+ margin: 2px;
+  }
+
+
+
+  .content h3 {
+    font-size: 2.7rem;
+    font-weight: 600;
+
+  }
+
+
+  .btn {
+    margin: 50px 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 1px;
+  }
+.bogo{
+  background: url('restaurant/udUclZY.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.content-bogo{
+  margin: 85px 5px;
+
+}
+.content-bogo h6{
+  margin: 25px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content-bogo h2{
+  margin: 18px 0px;
+  font-family: Bahnschrift Condensed;
+  
+}
+.content-bogo h5{
+  margin: 12px 0px;
+  font-family: Baskerville Old Face;
+}
+
+
+
+
+
+
+
+
+
+
+
+  footer {
+    width: 100%;
+    padding: 25px 0;
+    padding-bottom: 65px;
+    text-align: center;
+  }
+
+  footer img {
+    width: 250px;
+    height: 90px;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    border-style: none;
+
+  }
+
+  footer .social {
+    display: inline-block;
+    width: 58px;
+    height: 60px;
+    background-size: cover;
+    margin: 0 10px;
+    background-position: top center;
+  }
+
+  footer .social:hover {
+    transform: scale(1.1);
+
+
+  }
+
+  footer .footer-nav ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-nav ul li {
+    display: inline-block;
+    font-family: "Zilla Slab", serif;
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding-right: 7px;
+    margin-right: 4px;
+    line-height: 1;
+    border-right: solid 1px #372f2d;
+  }
+
+  footer .footer-nav ul li a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(94, 91, 91);
+  }
+
+  footer .copyright {
+    font-size: .73rem;
+    display: inline-block;
+    margin-bottom: 0px;
+    color: rgb(94, 91, 91);
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+
+  }
+</style>
+
+<body>
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="restaurant/32212254732-2021030409382944-unscreen.gif"
+            class="logo"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="event.html" style="color: black;">Events</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bar.html" style="color: black;">Bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html" style="color: black;">Menu</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="special.html" style="color: black;">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html" style="color: rgb(209, 24, 24);">Order now</a>
+            </li>
+
+          </ul>
+          <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
+      </div>
+    </nav>
+
+
+
+
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="events" style="background: url('restaurant/breadcrumb_bg.png');">
+        <h1 id="event">Specials</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <!-------------------------------------------------------specials---------------------------------------------------------->
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="restaurant/bbq-parties.jpg" width="100%" height="90%" id="bbq">
+      </div>
+      <div class="col-md-6">
+        <div class="content" >
+          <h2 id="bbq">FALL OFF</h2>
+          <h2 id="bbq">THE BONE BBQ.</h2>
+          <h1 id="bbq">FALL OFF</h1>
+          <h3 id="bbq">YOUR CHAIR VALUE.</h3><br>
+          <span>BBQ Party Packs start at $99.99* Available <br>for To-Go only. Feeds 8-10 people.</span><BR>
+          <a href="order.html"> <button class="btn btn-danger">Order NOW</button></a><br><br>
+          <span>Smaller party? Check out our Family Feast (feeds 4). Larger celebration?
+          </span><br><br>
+          <span><a href="event.html" style="text-decoration: none; color:red; font-size:1.3rem; ">View our Catering &
+              Events menu.</a></span><br><br>
+          <span style="font-size: 1rem; margin: 10px 2px;">*Prices may vary by location. Visit your local store for details.<br>  Discounts may not be applied.
+            Depending on the order sizes, we<br> may be bale to handle your request the same day, but 2-3 days in <br>advance is
+            appreciated. The more notice we have, the better.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-----------------------------------bogo spcl--------------------------------------------------------------------------->
+<div class="container-fluid"id="bogo">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-5">
+      <div class="bogo">
+        <h1 style="color: white; margin:1px 3px; font-size: 2.1rem; text-align: center;">WEEKLY BOGO SPECIALS</h1>
+        <h2 style="color: white; margin:20px 3px; font-size: 1.1rem; text-align: center;">PLEASE SET YOUR LOCATION TO VIEW LOCAL SPECIALS.</h2>
+      </div>
+  </div>
+    <div class="col-md-3"></div>
+  </div>
+
+
+<div class="row mt-4">
+  <div class="col-md-1"></div>
+  <div class="col-md-5" >
+    <img src="restaurant/BOGO_Wings.jpg" height="100%" width="100%" style="border-radius: 5px;">
+  </div>
+  <div class="col-md-1"></div>
+
+  <div class="col-md-5">
+    <div class="content-bogo">
+      <h6>MONDAY</h6>
+      <h2>WINGS</h2>
+      <h5>BUY 1 GET 2 FREE</h5>
+    ----------------------------------------
+    <h6>TUESDAY</h6>
+    <h2>CHICKEN ENTREE</h2>
+    <h5>1/2 CHICKEN</h5>
+    <h5>2 SIDES & GARLIC BREAD</h5>
+  ----------------------------------------
+  <h6>WEDNESDAY</h6>
+  <h2>PULLED PORK PLATTERS</h2>
+  <h5>2 SIDES & GARLIC BREAD</h5>
+----------------------------------------
+<h6>THURSDAY</h6>
+<h2>BONELESS WINGS</h2>
+<h5>BUY 3, GET 2 FREE</h5>
+----------------------------------------
+    </div>
+   
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!---------------------------------------------------footer--------------------------------------------------------------------->
+
+  <footer class="container-fluid" style="  width: 100%;padding-right: 15px;padding-left: 15px;margin-right: auto;">
+    <a href="#"><img src="restaurant/logo.svg"></a>
+    <p>
+      <a href="#" target="_blank" style="background-image: url('restaurant/logo-facebook-512.webp');"
+        class="social"></a>
+      <a href="#" target="_blank"
+        style="background-image: url('restaurant/60-606475_png-file-twitter-icon-round-black-clipart.png');"
+        class="social"></a>
+      <a href="#" target="_blank" style="background-image: url('restaurant/instagram-icon-white-on-black-circle.png');"
+        class="social"></a>
+
+
+    </p>
+
+    <nav class="footer-nav">
+      <ul class="menu">
+        <li class="menu-item"><a href="#">About us</a></li>
+        <li class="menu-item"><a href="#">Contact us</a></li>
+        <li class="menu-item"><a href="bones club.html">Bones Club</a></li>
+        <li class="menu-item"><a href="#">gift card</a></li>
+        <li class="menu-item"><a href="menu.html">menu</a></li>
+      </ul>
+    </nav>
+    <p class="copyright serif">© 2022 Smokey Bones . All Right Reserve</p>
+
+  </footer>
+
+  <!--------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
