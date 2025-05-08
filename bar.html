@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>SMOKEY BONES!</title>
+  <link rel="icon" href="restaurant/fire.png" type="image">
+  <link rel="stylesheet" href="css/restro.css">
+</head>
+<style>
+  .logo {
+    height: 80px;
+    width: 238px;
+
+  }
+
+  .navbar ul {
+    padding: 2px 5px;
+  }
+
+  .navbar ul li {
+    margin: 1px 20px;
+
+  }
+
+  .navbar ul li a {
+    margin: 0px 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Verdana;
+  }
+
+  .row .events {
+
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .row .events h1 {
+
+    padding: 15px 0;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+  }
+
+  .row .header {
+
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover cover;
+
+  }
+
+
+
+
+  .about-img {
+    padding: 0px 1px;
+
+  }
+
+  .about-img img {
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center center/cover;
+
+  }
+
+  .about-img img:hover {
+    opacity: .7;
+
+
+  }
+
+  .content {
+    text-align: center;
+    font-weight: 200;
+    font-family: Bahnschrift Condensed;
+
+  }
+
+  .content h1 {
+    text-align: center;
+    font-weight: 800;
+    font-family: Bahnschrift Condensed;
+
+
+  }
+
+  .content h4 {
+    text-align: center;
+    font-weight: 300;
+    font-family: Candara Light;
+
+
+
+  }
+
+  .cocktail {
+    padding: 0px 45px;
+
+  }
+
+  .cocktail img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center center/cover;
+
+  }
+
+  .content2 h1 {
+
+    font-weight: 800;
+    font-family: Bahnschrift Condensed;
+
+
+  }
+
+  .content2 h2 {
+
+    font-weight: 800;
+    font-family: Bahnschrift Condensed;
+
+
+  }
+
+  .content2 h9 {
+
+    font-weight: 300;
+    font-family: Bahnschrift Condensed;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer {
+    width: 100%;
+    padding: 25px 0;
+    padding-bottom: 65px;
+    text-align: center;
+  }
+
+  footer img {
+    width: 250px;
+    height: 90px;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    border-style: none;
+
+  }
+
+  footer .social {
+    display: inline-block;
+    width: 58px;
+    height: 60px;
+    background-size: cover;
+    margin: 0 10px;
+    background-position: top center;
+  }
+
+  footer .social:hover {
+    transform: scale(1.1);
+
+
+  }
+
+  footer .footer-nav ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-nav ul li {
+    display: inline-block;
+    font-family: "Zilla Slab", serif;
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding-right: 7px;
+    margin-right: 4px;
+    line-height: 1;
+    border-right: solid 1px #372f2d;
+  }
+
+  footer .footer-nav ul li a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(94, 91, 91);
+  }
+
+  footer .copyright {
+    font-size: .73rem;
+    display: inline-block;
+    margin-bottom: 0px;
+    color: rgb(94, 91, 91);
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+
+  }
+</style>
+
+<body>
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="restaurant/32212254732-2021030409382944-unscreen.gif"
+            class="logo"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="event.html" style="color: black;">Events</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bar.html" style="color: black;">Bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html" style="color: black;">Menu</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="special.html" style="color: black;">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html" style="color: rgb(209, 24, 24);">Order now</a>
+            </li>
+
+          </ul>
+          <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
+      </div>
+    </nav>
+
+
+
+
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="events" style="background: url('restaurant/breadcrumb_bg.png');">
+        <h1 id="event">BAR\<a href="menu.html" style="text-decoration: none; color:white;">MENU\</a>DRINKS</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <!-------------------------------------------------------bar---------------------------------------------------------->
+
+
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="header" style="background: url('restaurant/drinks_hero.jpg');">
+        <div class="content center"
+          style="text-align: center; color: white; padding: 125px 12px; margin-bottom: 30px; ">
+          <h2 style="font-size: 3.5rem; font-weight:400; font-family: Arial Rounded MT Bold; display: inline-block;">
+            DRINKS</h2>
+          <h1 style="font-size: 4.9rem; font-weight:800; font-family: Bahnschrift SemiBold; line-height: .9;" id="eve">
+            BAR </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------->
+
+
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-md-6 mt-4">
+
+        <div class="about-img">
+
+          <img src="restaurant/photo-1572116469696-31de0f17cc34.jfif">
+        </div>
+
+      </div>
+
+      <div class="col-md-6 mt-4">
+
+        <div class="about-img">
+          <img src="restaurant/Bar-License-Tamil-Nadu.jpg">
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------>
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="content mt-4">
+        <h2>ENJOY A BALANCED DIET…</h2>
+        <h2>HOLD A BEER IN EACH HAND.</h2>
+        <h9 style="color: rgb(79, 77, 77); font-family: Bahnschrift Light;">Available in 12oz bottles and 16/22oz
+          drafts.<br>
+          Availability varies by location.<br>
+          Draft Beer Sampler – 4 for $8</h9>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-5">
+        <div class="content">
+          <h1>BOTTLE/CAN</h1>
+          <h4>Kingfisher</h4>
+          <h4>Carlsberg</h4>
+          <h4>Tuborg</h4>
+          <h4>Corona Extra</h4>
+          <h4>Modelo Especial</h4>
+          <h4>Heineken</h4>
+          <h4>Haywards 5000</h4>
+          <h4>Beer Bud Light</h4>
+          <h4>Light Beer Coors</h4>
+          <h4>Ultra Light Beer Michelob </h4>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <img src="restaurant/Beer-for-Wine-Lovers.jpg" height="100%" width="100%"
+          style="background-position: center; background-size: cover;">
+      </div>
+
+    </div>
+
+    <div class="row mt-5">
+      <div class="content mt-4">
+        <h1>WINES</h1>
+
+        <h9 style="color: rgb(79, 77, 77); font-family: Bahnschrift Light;">Available in 6/9oz pours and by the bottle.
+          <br> Availability varies by location.
+        </h9>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="content">
+          <h1 style="color:red;">WHITES</h1>
+          <h4>Listed sparkling to swagger</h4>
+          <h4>PROSECCO, La Marca</h4>
+          <h4>MOSCATO, Canyon Road</h4>
+          <h4>PINOT GRIGIO, Ecco Domani</h4>
+          <h4>SAUVIGNON BLANC, Starborough</h4>
+          <h4>CHARDONNAY, Canyon Road</h4>
+          <h4>CHARDONNAY, Kendall-Jackson</h4>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content">
+          <h1 style="color:red;">REDS</h1>
+          <h4>Listed mild to wild</h4>
+          <h4>PINOT NOIR, Silver Gate</h4>
+          <h4>MERLOT, Woodbridge</h4>
+          <h4>CABERNET SAUVIGNON, Storypoint</h4>
+          <h4>CABERNET SAUVIGNON, Josh Cellars</h4>
+          <h4>CABERNET SAUVIGNON, Tooth & Nail</h4>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="row mt-5">
+      <div class="content mt-4">
+        <h1>COCKTAILS</h1>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mt-4">
+
+        <div class="cocktail">
+
+          <img src="restaurant/cocktail5.webp">
+        </div>
+        <div class="content2 mt-5 mx-3">
+          <h1 style="color:red;">SASSY SANGRIAS</h1>
+          <h2 style="margin-top: 20px;">BLUSHING STRAWBERRY</h2>
+          <h9>Bacardi Dragon Berry Rum, Ecco Domani Pinot Grigio, Re’al Strawberry<br> Puree, fresh lemon, basil &
+            strawberry, citrus sour, Sprite</h9><br>
+          <h9 style="color: rgb(238, 80, 80);">Individual | Pitcher (2+ people)</h9>
+
+          <h2 style="margin-top: 20px;">BERRY BURST</h2>
+          <h9>Three Olives Berry Vodka, Woodbridge Merlot, pineapple & Ocean Spray <br>Cranberry Juice, fresh lime,
+            orange, blueberries & raspberries
+          </h9><br>
+          <h9 style="color: rgb(238, 80, 80);">Individual | Pitcher (2+ people)</h9>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 mt-4">
+
+        <div class="cocktail">
+          <img src="restaurant/cocktail4.webp">
+        </div>
+        <div class="content2 mt-5 mx-4">
+          <h1 style="color:red;">SIGNATURE SOUTHERN STYLE</h1>
+          <h2 style="margin-top: 20px;">GIN & JUICE</h2>
+          <h9>Tanquery Gin, St. Germain Elder Liqueur, orange juice, Ocean <br>Spray Ruby Red Grapefruit Juice</h9>
+
+          <h2 style="margin-top: 20px;">SWEET BOURBON PEACH TEA</h2>
+          <h9>Maker’s Mark Bourbon, Aperol, Re’al Peach Puree, fresh lemon, <br>house-brewed sweet tea
+          </h9>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="col-md-6 mt-4">
+
+
+        <div class="content2 mt-5 mx-3">
+
+          <h2 style="margin-top: 20px;">SMOOTH BOURBON BLACKBERRY LEMONADE
+          </h2>
+          <h9>Maker’s Mark Bourbon, Monin Blackberry Puree, fresh lemonade, La Marca Prosecco</h9>
+
+
+          <h2 style="margin-top: 20px;">GOOD OLD FASHIONED ROOT BEER</h2>
+          <h9>Crown Royal Deluxe Whisky, Monin Root Beer Syrup, Angostura Bitters
+          </h9>
+          <h2 style="margin-top: 20px;">TOP SHELF LONG ISLAND LIGHTER FLUID</h2>
+          <h9>Grey Goose Vodka, Bacardi Limon Rum, Beefeater Gin, Patron, Citronge, citrus sour,<br> Coca-Cola
+          </h9>
+          <h2 style="margin-top: 20px;">TITO’S STRAWBERRY LEMONADE</h2>
+          <h9>Tito’s Handmade Vodka, Re’al Strawberry Puree, Minute Maid Lemonade
+          </h9>
+
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 mt-4">
+
+        <div class="cocktail">
+          <img src="restaurant/photo-1566417713940-fe7c737a9ef2.jfif">
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6 mt-4">
+
+        <div class="cocktail">
+          <img src="restaurant/dessert3.jpg">
+        </div>
+       
+
+
+       
+
+      </div>
+
+      <div class="col-md-6 mt-4">
+
+        <div class="content2 mt-5 mx-3">
+          <h1 style="color:red;">DESSERT COCKTAILS</h1>
+          <h2 style="margin-top: 20px;">CHOCOLATE MARTINI
+          </h2>
+          <h9>Three Olives Vanilla Vodka, Baileys, chocolate syrup</h9>
+
+
+          <h2 style="margin-top: 20px;">ESPRESSO MARTINI</h2>
+          <h9>Tito’s Handmade Vodka, Kahlúa Coffee Liqueur, fresh brewed coffee,<br> half & half
+          </h9>
+         
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!----------------------------------------------------------------------------------------------------------------->
+
+
+
+
+  <!---------------------------------------------------footer--------------------------------------------------------------------->
+
+  <footer class="container-fluid" style="  width: 100%;padding-right: 15px;padding-left: 15px;margin-right: auto;">
+    <a href="#"><img src="restaurant/logo.svg"></a>
+    <p>
+      <a href="#" target="_blank" style="background-image: url('restaurant/logo-facebook-512.webp');"
+        class="social"></a>
+      <a href="#" target="_blank"
+        style="background-image: url('restaurant/60-606475_png-file-twitter-icon-round-black-clipart.png');"
+        class="social"></a>
+      <a href="#" target="_blank" style="background-image: url('restaurant/instagram-icon-white-on-black-circle.png');"
+        class="social"></a>
+
+
+    </p>
+
+    <nav class="footer-nav">
+      <ul class="menu">
+        <li class="menu-item"><a href="#">About us</a></li>
+        <li class="menu-item"><a href="#">Contact us</a></li>
+        <li class="menu-item"><a href="bones club.html">Bones Club</a></li>
+        <li class="menu-item"><a href="#">gift card</a></li>
+        <li class="menu-item"><a href="menu.html">menu</a></li>
+      </ul>
+    </nav>
+    <p class="copyright serif">© 2022 Smokey Bones . All Right Reserve</p>
+
+  </footer>
+
+  <!--------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
